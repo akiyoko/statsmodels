@@ -30,7 +30,8 @@ class VARSummary(object):
     default_fmt = dict(
         #data_fmts = ["%#12.6g","%#12.6g","%#10.4g","%#5.4g"],
         #data_fmts = ["%#10.4g","%#10.4g","%#10.4g","%#6.4g"],
-        data_fmts = ["%#15.6F","%#15.6F","%#15.3F","%#14.3F"],
+        # VARモデルの回帰結果のsummaryの小数点以下の有効桁数を6桁から8桁に変更
+        data_fmts = ["%#15.8F","%#15.8F","%#15.3F","%#14.3F"],
         empty_cell = '',
         #colwidths = 10,
         colsep='  ',
